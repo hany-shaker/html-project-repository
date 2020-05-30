@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>operation system </title>
+</head>
+<body bgcolor="#60675f" text="white" >
+<img src="home page.png">
+<table border="5" width="100%" height="10%" cellspace="1" bgcolor="black">
+<tr>
+<td><font size="8" color="blue"><a href="home page.html"> home page</a></font></td>
+<td><font size="8" color="blue"><a href="windows.html"> Microsoft Windows</a></font></td>
+<td><font size="8" color="blue"><a href="linux.html">Linux<font></a></font></td>
+<td><font size="8" color="blue"><a href="macos.html">macOS<font></a></font></td>
+<td><font size="8" color="blue"><a href="android.html">Android</a></font></td>
+</tr>
+</table>
+<h1>introduction</h1>
+<hr/>
+<P><font size="5" face="arial">
+     operating system is system software that manages hardware , software resources, and provides common services 
+for computer programs.the core set of software on a tool that keeps everything together. Operating systems
+communicate with the device's hardware.They handle everything from your keyboard and mice to the Wi-Fi radio,
+storage devices, and display.In other words, an OS handles input and output devices.
+The operation system allocates service and resources such as processors, memory, devices, and information. It has
+a required program for managing those resources such as memory management module, a scheduler a traffic controller,
+a file system and I/O programs.It is a program that controls the execution of applications and works as an interface
+between the user of a pc and the laptop hardware. It always runs all the time
+when the computer is on.</font></p>  
+</font><p/>
+<img src="home page0.png">
+<h2><font size="7" color="black">Operation system (OS)</font></h2>
+<font size="5" color="black"><ul type="circle">
+<li>A program that controls the execution of use programs</li>
+<li>An interface among application and equipment</li>
+</ul></font>
+<h2><font size="6" color="black">main objectives of an OS:</font></h2>
+<font size="5" color="black"><ul type="circle">	
+<li>Convenience </li>
+<li>Efficiency </li>
+<li>Ability to evolve</li>
+</ul></font>
+<h2><font size="6" color="black">Administrations Provided by the Operating System</font></h2>
+<font size="5"><ul type="circle"><font size="5">
+<li><font color="black">Program development</font></li>
+</font><p><font size="5">Editors and debuggers.</font></p>
+<li><font color="black">Program execution</font></li>
+<p>OS handles programming of various tasks needed to execute a program</p>
+<li><font color="black">Access I/O devices</font></li>
+<ul type="square">
+<li>Each device will have special interface</li>
+<li>OS existence of basic interface to users</li>
+</ul>
+<li><font color="black">managed access to files</font>
+<ul type="square">
+<li>Accessing several media but presentation of a common interface to user</li>
+<li>protects in multi-access systems</li>
+</ul>
+</li><li><font color="black">System access</font></li>
+<p>manages access to the system and its several resources</p>
+<li><font color="black">detects and response</font></li>
+<ul type="square">
+<li>Internal and external hardware system errors</li>
+<li>Software errors</li>
+<li>Operating system cannot Grant requests of application</li>
+</ul>
+<li><font color="black">Accounting</font></li>
+<ul type="square">
+<li>gather statistics of usage</li>
+<li>performance of monitor</li>
+</ul></ul>
+<h2><font size="6" color="black">The main Role of an OS</font></h2>
+<font size="5" color="black"><ul type="circle">	
+<li>A computer is a set of resources for the movement, storage, and operating of data.</li>
+<li>The OS has a responsibility of controlling these resources.</li>
+</ul></font>
+<h2><font size="6" color="black">Operating System as Software</font></h2>
+<font size="5" color="black"><ul type="circle">	
+<li>The OS roles do not differ from these in an ordinary computer software.It
+ is a program that must be executed by the CPU</li>
+<li>Operating system concedes control of the processor</li>
+</ul></font>
+<h2><font size="6" color="black">Evolution of Operating Systems</font></h2>
+<font size="5" color="black"><ul type="circle">	
+<li>Hardware improves plus new kinds of hardware</li>
+<li>New services</li>
+<li>repairs</li>
+</ul></font>
+<h2><font  size="8">The page table of virtual Memory</font></h2>
+<p><font size="6" color="black">One of the operating system roles in stage of excution 
+the program is creating the virtual page table which connects the program with 
+real memory by mabbing between virtual adress and physical adress.</font></p>
+<img alt="Virtual Memory" src="virtual memory.jpg">
+</br></br>
+<table border="5" width="100%" height="40%" cellspace="1" bgcolor="black">
+<font size="8"><tr><font size="8">
+<td>region</td>
+<td>region name</td>
+<td>range<font></td>
+<td>description</td>
+</tr></font>
+<tr>
+<td>A</td>
+<td>program code and data</td>
+<td>[O-USER_HEAP_START]</td>
+<td>contains the intial code and data of the program</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Program Heap Memory<font></td>
+<td>[USER_HEAP_START-USER_HEAP_MAX]<font></td>
+<td>contain dynamic memory allocations at runtime of the program</td>
+</tr>
+<tr>
+<td>C</td>
+<td>program stack</td>
+<td>[USER_HEAP_START-USTACKTOP]</td>
+<td>contains the program stack area</td>
+</tr>
+<tr>
+<td>D</td>
+<td>read only region</td>
+<td>[USER_TOP-USER_LIMIT]</td>
+<td>contains read only memory space that is shablack between kemel and user. All 
+the programs must have identical copy of this region in thier virtual space.</td>
+</tr>
+<tr>
+<td>E</td>
+<td>kernel code, data and stack</td>
+<td>[USER_LIMIT-4GB]</td>
+<td>Contains the FOS kernel code, data and stack. All programs must
+have identical copy of this region in their virtual space  </td>
+</tr>
+</table>
+<h2><font  size="8">Types of CPU schedulin in operating system</font></h2>
+<p><font size="5">IN operating system,the schudiling means that the proceesses is done
+on time .the objectives of scheduling Algorithm:</font></p>
+<font size="5" color="black"><ol >	
+<li>Maximum CPU usage</li>
+<li>Minimum waiting time</li>
+<li>Minimum response time</li>
+<li>Fair distribution CPU </li>
+<li>maximum number of process done per unite time </li>
+<li>Minimum response time</li>
+</ol></font>
+<h2><font  size="7">Different Scheduling Algorithms </font></h2>
+<table border="5" width="100%" height="40%" cellspace="1" bgcolor="black">
+<tr>
+<td><font size="6">First come First server (FCFS)</font></td>
+<td><font size="6">Shortest job First</font></td>
+<td><font size="6">Longest job First</font></td>
+</tr>
+<tr>
+<td><font size="6">Shortest remaining time first</font></td>
+<td><font size="6">Longest remaining time first</font></td>
+<td><font size="6">Round Robin scheduling</font></td>
+</tr>
+<tr>
+<td><font size="6">Priority based scheduling (Non-preemptive)</font></td>
+<td><font size="6">Highest response ration next (HRRN)</font></td>
+<td><font size="6">Multitive queue scheduling</font></td>
+</tr>
+</table></font>
+</body>
+</html>
